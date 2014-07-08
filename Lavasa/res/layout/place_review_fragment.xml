@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/placereview_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Write a Review"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/placereview_btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="+" />
+
+    <ImageView
+        android:id="@+id/seperator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placereview_btn_add"
+        android:background="@drawable/border_dot" />
+
+    <TextView
+        android:id="@+id/placereview_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seperator"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="What People say about this place"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/placereview_et_review_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/placereview_msg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+    </ListView>
+
+</RelativeLayout>

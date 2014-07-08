@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/streetviewpanorama"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportStreetViewPanoramaFragment" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/streetviewpanorama"
+        android:background="#D000"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <CheckBox
+            android:id="@+id/streetnames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onStreetNamesToggled"
+            android:text="@string/streetnames"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onNavigationToggled"
+            android:text="@string/navigation"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onZoomToggled"
+            android:text="@string/zoom_gestures"
+            android:textColor="@android:color/white" />
+
+        <CheckBox
+            android:id="@+id/panning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onPanningToggled"
+            android:text="@string/panning"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

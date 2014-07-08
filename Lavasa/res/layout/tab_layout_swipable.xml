@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/food"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/white"
+            android:padding="15dp"
+            android:text="Food"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/atm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/white"
+            android:padding="15dp"
+            android:text="ATM"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/bus_station"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/white"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Bus Station"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/white"
+            android:padding="15dp"
+            android:text="All"
+            android:textColor="@android:color/holo_blue_dark" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout_tab" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

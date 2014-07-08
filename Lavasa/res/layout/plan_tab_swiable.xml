@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/plan_linear_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/plan_restaurent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/white"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Restaurant"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/plan_religious"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/white"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Religious"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/plan_mountain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/white"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Mountain"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/plan_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@android:color/white"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="All"
+            android:textColor="@android:color/holo_blue_dark" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/plan_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plan_linear_tab" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

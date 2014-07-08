@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/plan_detail_image"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/plan_detail_btn_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plan_detail_packagename"
+        android:text="BOOK NOW" />
+
+    <Button
+        android:id="@+id/plan_detail_btn_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plan_detail_btn_book"
+        android:text="MAP" />
+
+    <ListView
+        android:id="@+id/plan_detail_list_itenerary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/plan_detail_btn_map"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/plan_detail_packagename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/plan_detail_image"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/plan_detail_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/plan_detail_image"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:text="Price" />
+
+</RelativeLayout>

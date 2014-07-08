@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/food" 
+          android:title="Food"
+          android:showAsAction="always"
+      >
+    </item>
+    <item android:id="@+id/atm" 
+          android:title="ATM"
+          android:showAsAction="always">
+    </item>
+    <item android:id="@+id/hospital" 
+          android:title="Hospital"
+          android:showAsAction="always">
+    </item>
+       <item android:id="@+id/all" 
+          android:title="All"
+          android:showAsAction="always">
+    </item>
+    <item android:id="@+id/exit" 
+          android:title="Exit"
+          android:showAsAction="ifRoom">
+    </item>
+</menu>

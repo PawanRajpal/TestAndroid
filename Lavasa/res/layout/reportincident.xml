@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tV_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Report an Incident" />
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tV_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:entries="@array/incidents" />
+
+    <EditText
+        android:id="@+id/eT_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_category"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/btn_cleardesc"
+        android:ems="10"
+        android:hint="Please add description" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/eT_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eT_description"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/btn_clearlocation"
+        android:ems="10"
+        android:hint="Location" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eT_location"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Camera" />
+
+    <Button
+        android:id="@+id/btn_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eT_location"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn_camera"
+        android:text="Gallery" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eT_location"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn_gallery"
+        android:text="Reset" />
+
+    <!-- To display picture taken -->
+
+    <HorizontalScrollView
+        android:id="@+id/hv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/btn_submit"
+        android:layout_below="@id/btn_gallery"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none" >
+
+        <ImageView
+            android:id="@+id/lV_subcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+        </ImageView>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btn_cleardesc"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eT_description"
+        android:layout_alignBottom="@+id/eT_description"
+        android:layout_alignParentRight="true"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/btn_clearlocation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eT_location"
+        android:layout_alignBottom="@+id/eT_location"
+        android:layout_alignParentRight="true"
+        android:text="Clear" />
+
+</RelativeLayout>

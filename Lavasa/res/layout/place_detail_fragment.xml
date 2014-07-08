@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/placedetail_iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/hello_world" />
+
+        <RatingBar
+            android:id="@+id/placedetail_rating_bar"
+            style="@style/foodRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/placedetail_iv_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:isIndicator="true" />
+
+        <TextView
+            android:id="@+id/placedetail_tv_numofratings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/placedetail_rating_bar"
+            android:text="No of Ratings" />
+
+        <TextView
+            android:id="@+id/placedetail_tv_peoplereview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/placedetail_tv_numofratings"
+            android:text="People Reviews" />
+
+        <ListView
+            android:id="@+id/action_bar_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:focusable="true"
+            android:visibility="gone" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/placedetail_tv_currencysymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/placedetail_iv_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Rupee Sysmbol" />
+
+        <TextView
+            android:id="@+id/placedetail_tv_rateofplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/placedetail_tv_currencysymbol"
+            android:layout_marginLeft="10dp"
+            android:text="Rate in Rupees" />
+
+        <TextView
+            android:id="@+id/placedetail_tv_staydetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/placedetail_tv_rateofplace"
+            android:layout_marginLeft="10dp"
+            android:text="1 Day, 1 Night" />
+
+        <Button
+            android:id="@+id/placedetail_btn_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/placedetail_tv_staydetail"
+            android:layout_marginTop="25dp"
+            android:text="Book Now" />
+
+        <TextView
+            android:id="@+id/placedetail_tv_detail_tilte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/placedetail_btn_book"
+            android:layout_marginTop="20dp"
+            android:text="Details" />
+
+        <TextView
+            android:id="@+id/placedetail_tv_place_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placedetail_tv_detail_tilte"
+            android:layout_marginTop="10dp"
+            android:text="Description" />
+    </RelativeLayout>
+
+</ScrollView>

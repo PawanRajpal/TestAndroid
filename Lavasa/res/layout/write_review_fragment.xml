@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/placereview_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Write a Review"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/placereview_et_review_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placereview_tv_title"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="TILTE" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/placereview_et_review_desc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/placereview_et_review_title"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="left|top"
+        android:hint="DESCRIPTION" >
+
+        <requestFocus />
+    </EditText>
+
+    <RatingBar
+        android:id="@+id/placereview_ratingbar"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/placereview_et_review_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/placereview_btn_add"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/placereview_ratingbar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Ok" />
+
+    <Button
+        android:id="@+id/placereview_btn_cancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placereview_ratingbar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/placereview_btn_add"
+        android:text="Cancel" />
+
+</RelativeLayout>

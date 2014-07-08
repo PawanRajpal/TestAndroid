@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/placereview_list_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/placereview_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/placereview_list_image"
+        android:text="TextView" />
+
+    <RatingBar
+        android:id="@+id/placereview_list_ratingbar"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/placereview_list_title"
+        android:layout_marginLeft="15dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_toRightOf="@+id/placereview_list_image" />
+
+    <TextView
+        android:id="@+id/placereview_list_review_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placereview_list_title"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/placereview_list_ratingbar"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/placereview_list_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placereview_list_ratingbar"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/placereview_list_image"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/placereview_list_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/placereview_list_ratingbar"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/rating_inactive" />
+
+</RelativeLayout>

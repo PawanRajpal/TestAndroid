@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/booking_et_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="First Name" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/booking_et_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booking_et_firstname"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Last Name" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/booking_et_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booking_et_lastname"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Mobile"
+        android:inputType="phone" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/booking_et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booking_et_phonenumber"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Age" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/booking_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" >
+
+        <Button
+            android:id="@+id/booking_btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/booking_btn_cleardesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Clear" />
+    </LinearLayout>
+
+</RelativeLayout>

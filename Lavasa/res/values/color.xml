@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="selected">#E1EBEF</drawable>
+    <drawable name="notselected">#F2F7F9</drawable>
+
+</resources>
